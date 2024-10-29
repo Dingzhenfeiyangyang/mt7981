@@ -54,7 +54,7 @@ jobs:
       working-directory: /workdir
       run: |
         df -hT $PWD
-        git clone -b openwrt-23.05 --single-branch --filter=blob:none https://github.com/padavanonly/immortalwrt-mt798x-23.05
+        git clone -b openwrt-23.05 --single-branch --filter=blob:none https://github.com/padavanonly/immortalwrt-mt798x-23.05 openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
     - name: Load custom feeds
